@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Service </title>
+</head>
+<body onload="loadObjects()">
+ <div id ="container">
+     <div>
+         <p>
+             <b>Book Manager</b>
+         </p>
+     </div>
+
+     <form method="post" id="bookform">
+         <table>
+             <tbody>
+             <tr>
+                 <td>Name</td>
+                 <td><input name="bookId" id="bookId" type="hidden">
+                 <input name="bookname" id="bookname" type="text"></td>
+             </tr>
+             <tr>
+             <td class="tdLable"><label for="ad002_dob" class="label">City</label> </td>
+             <td><input type="text" name="city" value="" id="city"></td>
+             </tr>
+
+             <tr>
+                 <td colspan="2"><input type="submit" value="Create"
+                                        id="subButton" onclick="return methodCall()"></td>
+             </tr>
+             </tbody>
+         </table>
+     </form>
+ </div>
+<div id="bookFromResponse"></div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</body>
+</html>
